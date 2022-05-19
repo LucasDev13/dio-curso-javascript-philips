@@ -1,3 +1,4 @@
+/********** Trabalhando com arrays **********/
 //o que são vetores ou arrays.
 
 //Como declarar um array
@@ -34,3 +35,22 @@ console.log(array1);*/
 /*let novoArray = array1.slice(0, 3);
 console.log(novoArray);*/
 
+/********** Trabalhando com objetos **********/
+
+let object = {string: 'string', number: 1, boolean: true, array: ["array1", "array2"], objectInterno: 
+{objectInterno: 'objeto interno'}};
+
+// console.log(object.number)
+// console.log(object.objectInterno)
+// console.log(object.array)
+
+// var string = object.string;
+// console.log(string);
+
+//primeira forma de desestruturação - passar um valor do atributo do objeto para a variável.
+var arrayInterno = object.array;
+console.log(arrayInterno);
+
+//segunda forma de desestruturação - a partir de chaves no momento da declarão.
+var {string, boolean, objectInterno} = object;
+console.log(string, boolean, objectInterno);
